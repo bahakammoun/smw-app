@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="genderList">
+        <item>männlich</item>
+        <item>weiblich</item>
+        <item>sonstiges</item>
+        <item>keine Angabe</item>
+    </string-array>
+
+    <string-array name="ageList">
+        <item>0-20</item>
+        <item>21-30</item>
+        <item>31-40</item>
+        <item>41+</item>
+    </string-array>
+
+    <string-array name="numberOfQuestionsList">
+        <item>2</item>
+        <item>4</item>
+        <item>6</item>
+        <item>8</item>
+        <item>10</item>
+        <item>12</item>
+        <item>14</item>
+        <item>16</item>
+        <item>18</item>
+        <item>20</item>
+    </string-array>
+
+    <string-array name="answerPossibilitiesList">
+        <item>0</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+
+    <string-array name="answerPossibilitiesNamesList">
+        <item>Freitextfeld</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+
+</resources>
+

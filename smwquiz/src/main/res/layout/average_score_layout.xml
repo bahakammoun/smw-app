@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="90dp" />
+
+    <TextView
+        android:text="Mein Durschnitt ist:"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/averageScoreText"
+        android:textAlignment="center"
+        android:textStyle="normal|bold"
+        android:textSize="18sp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="15dp" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/averageScoreResult"
+        android:textSize="30sp"
+        android:textAlignment="center" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+
+    <Button
+        android:text="Vergleiche mich mit meinem Geschlecht"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:id="@+id/sortByGender"
+        style="@style/Widget.AppCompat.Button.Colored" />
+
+    <Button
+        android:text="Vergleiche mich mit meiner Altersgruppe"
+        android:id="@+id/sortByAge"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="75dp" />
+
+</LinearLayout>

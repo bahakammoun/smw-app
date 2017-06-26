@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:id="@+id/activity_main"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.pavelnefedov.smwquiz.ChooseYourWikiActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:text="eigenes Wiki hier eintragen"
+        android:ems="10"
+        android:layout_marginTop="16dp"
+        android:id="@+id/Wikieingabe"
+        android:singleLine="true"
+        android:selectAllOnFocus="false"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:fontFamily="sans-serif"
+        android:textAlignment="viewStart"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="Wiki bestätigen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ownWiki"
+        android:layout_below="@+id/Wikieingabe"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        style="@style/Widget.AppCompat.Button.Colored" />
+
+    <GridLayout
+        android:id="@+id/WikiAuswahl"
+        android:layout_width="match_parent"
+        android:layout_height="290dp"
+        android:layout_marginTop="17dp"
+        android:layout_below="@+id/ownWiki"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <Button
+            android:text="Platzhalter"
+            android:layout_width="165dp"
+            android:layout_height="95dp"
+            android:id="@+id/Wiki7"
+            android:layout_row="3"
+            android:layout_column="0"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:visibility="visible"/>
+
+        <Button
+            android:text="Platzhalter"
+            android:id="@+id/Wiki8"
+            android:layout_height="95dp"
+            android:layout_width="165dp"
+            android:layout_row="3"
+            android:layout_column="1"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:visibility="visible"/>
+
+        <Button
+            android:text="Autowiki"
+            android:id="@+id/Wiki3"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:layout_width="165dp"
+            android:layout_height="95dp"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:visibility="visible"/>
+
+        <Button
+            android:text="Platzhalter"
+            android:layout_width="165dp"
+            android:layout_height="95dp"
+            android:id="@+id/Wiki4"
+            android:layout_row="2"
+            android:layout_column="1"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:visibility="visible"/>
+
+        <Button
+            android:text="Sportarten"
+            android:id="@+id/wiki1"
+            android:layout_height="95dp"
+            android:layout_width="165dp"
+            android:layout_row="1"
+            android:layout_column="0"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:visibility="visible"/>
+
+        <Button
+            android:text="Olympia Wiki"
+            android:id="@+id/wiki2"
+            android:layout_height="95dp"
+            android:layout_width="165dp"
+            android:layout_row="1"
+            android:layout_column="1"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:visibility="visible"/>
+
+    </GridLayout>
+
+</RelativeLayout>
