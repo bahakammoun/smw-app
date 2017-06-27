@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">SMW Quiz</string>
 
+    <string name="backend_address">http://192.168.0.102:8085</string>
+
     <string name="welcome">Willkommen bei unserem SMW Quiz</string>
     <string name="quiz_starter">Hier geht es zum Quiz</string>
     <string name="show_statistics">Statisitk</string>

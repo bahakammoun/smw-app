@@ -23,6 +23,7 @@ import java.util.HashMap;
 /**
  * Created by Pavel Nefedov on 07.12.2016.
  * Activity where the user can choose which wiki he wants to use for the quiz
+ * http://46.101.100.92:8080
  */
 
 public class ChooseYourWikiActivity extends AppCompatActivity {
@@ -39,6 +40,7 @@ public class ChooseYourWikiActivity extends AppCompatActivity {
     Button firstWiki;
     Button secondWiki;
     Button thirdWiki;
+    Button fourthWiki;
     Button userWiki;
     EditText wikiEntry;
 
@@ -70,7 +72,7 @@ public class ChooseYourWikiActivity extends AppCompatActivity {
             public void onClick(View v) {
                 wikiUrl = "https://amazonas.fzi.de/kel-1/";
                 saveWiki(wikiUrl);
-                url =  "http://46.101.100.92:8080/?do=quest," + wikiUrl + "," + numberOfQuestionsChoosen + "," + numberOfResponsesChoosen;
+                url =  getResources().getString(R.string.backend_address) + "/?do=quest," + wikiUrl + "," + numberOfQuestionsChoosen + "," + numberOfResponsesChoosen;
                 new GetJSON().execute();
             }
         });
@@ -84,7 +86,7 @@ public class ChooseYourWikiActivity extends AppCompatActivity {
                 wikiUrl = "https://amazonas.fzi.de/kel-2/";
                 saveWiki(wikiUrl);
                 System.out.println();
-                url =  "http://46.101.100.92:8080/?do=quest," + wikiUrl + "," + numberOfQuestionsChoosen + "," + numberOfResponsesChoosen;
+                url =  getResources().getString(R.string.backend_address) + "/?do=quest," + wikiUrl + "," + numberOfQuestionsChoosen + "," + numberOfResponsesChoosen;
                 new GetJSON().execute();
             }
         });
@@ -96,7 +98,19 @@ public class ChooseYourWikiActivity extends AppCompatActivity {
 
                 wikiUrl = "http://aifb-ls3-vm2.aifb.kit.edu/smw-seminar2/";
                 saveWiki(wikiUrl);
-                url =  "http://46.101.100.92:8080/?do=quest," + wikiUrl + "," + numberOfQuestionsChoosen + "," + numberOfResponsesChoosen;
+                url =  getResources().getString(R.string.backend_address) + "/?do=quest," + wikiUrl + "," + numberOfQuestionsChoosen + "," + numberOfResponsesChoosen;
+                new GetJSON().execute();
+            }
+        });
+
+        fourthWiki = (Button) findViewById(R.id.Wiki4);
+        fourthWiki.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                wikiUrl = "https://amazonas.fzi.de/wdt/";
+                saveWiki(wikiUrl);
+                url =  getResources().getString(R.string.backend_address) + "/?do=quest," + wikiUrl + "," + numberOfQuestionsChoosen + "," + numberOfResponsesChoosen;
                 new GetJSON().execute();
             }
         });
@@ -109,7 +123,7 @@ public class ChooseYourWikiActivity extends AppCompatActivity {
 
                 wikiUrl = wikiEntry.getText().toString();
                 saveWiki(wikiUrl);
-                url =  "http://46.101.100.92:8080/?do=quest," + wikiUrl + "," + numberOfQuestionsChoosen + "," + numberOfResponsesChoosen;
+                url =  getResources().getString(R.string.backend_address) + "/?do=quest," + wikiUrl + "," + numberOfQuestionsChoosen + "," + numberOfResponsesChoosen;
                 new GetJSON().execute();
             }
         });

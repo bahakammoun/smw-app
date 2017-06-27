@@ -101,7 +101,7 @@ public class QuizResultsActivity extends AppCompatActivity {
         editor.apply();
 
 
-        resultUrl = "http://46.101.100.92:8080/?do=statSet," + numberOfQuestionsChoosen + "," + resultAnswers + "," + numberOfResponsesChoosen + "," + ageCode + "," + genderCode + ","  + wikiUrl + ",";
+        resultUrl = getResources().getString(R.string.backend_address) + "/?do=statSet," + numberOfQuestionsChoosen + "," + resultAnswers + "," + numberOfResponsesChoosen + "," + ageCode + "," + genderCode + ","  + wikiUrl + ",";
         resultInput = "Du hast " + resultAnswers +" von " + numberOfQuestionsChoosen + " Fragen richitg beantwortet!";
 
         result = ((TextView)findViewById(R.id.results));

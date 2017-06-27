@@ -102,7 +102,7 @@ inner class to split data from a String in JSON format
         protected Void doInBackground(Void... voids) {
             HttpHandler sh = new HttpHandler();
 
-            String jsonStr = sh.makeServiceCall("http://46.101.100.92:8080/?do=stat,gender");
+            String jsonStr = sh.makeServiceCall(getResources().getString(R.string.backend_address) + "/?do=stat,gender");
 
             Log.e(MainActivity.class.getSimpleName(),"Response from url:" + jsonStr);
             if(jsonStr != null) {
@@ -144,7 +144,7 @@ inner class to split data from a String in JSON format
         protected Void doInBackground(Void... voids) {
             HttpHandler sh = new HttpHandler();
 
-            String jsonStr = sh.makeServiceCall("http://46.101.100.92:8080/?do=stat,age");
+            String jsonStr = sh.makeServiceCall(getResources().getString(R.string.backend_address) + "/?do=stat,age");
 
             Log.e(MainActivity.class.getSimpleName(),"Response from url:" + jsonStr);
             if(jsonStr != null) {

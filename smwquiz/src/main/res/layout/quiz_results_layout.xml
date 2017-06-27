@@ -35,7 +35,7 @@
         android:inputType="textMultiLine"
         android:ems="10"
         android:id="@+id/feedbackText"
-        android:text="Platz für dein Feedback" />
+        android:hint="Platz für dein Feedback" />
 
     <Space
         android:layout_width="match_parent"

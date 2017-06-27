@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="text"
-        android:text="eigenes Wiki hier eintragen"
+        android:hint="eigenes Wiki hier eintragen"
         android:ems="10"
         android:layout_marginTop="16dp"
         android:id="@+id/Wikieingabe"
@@ -75,7 +75,7 @@
             android:visibility="visible"/>
 
         <Button
-            android:text="Platzhalter"
+            android:text="KIT"
             android:layout_width="165dp"
             android:layout_height="95dp"
             android:id="@+id/Wiki4"

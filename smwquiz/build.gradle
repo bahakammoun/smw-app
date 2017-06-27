@@ -1,19 +1,11 @@
 apply plugin: 'com.android.application'
 
 android {
-    signingConfigs {
-        config {
-            keyAlias 'MyAndroidKey'
-            keyPassword '43Ugefepwr?-+H8K'
-            storeFile file('C:/Users/Pavel Nefedov/keystores/android.jks')
-            storePassword 'watedelu4'
-        }
-    }
     lintOptions {
         disable "ResourceType"
     }
     compileSdkVersion 23
-    buildToolsVersion "23.0.3"
+    buildToolsVersion '25.0.0'
     defaultConfig {
         applicationId 'com.example.pavelnefedov.smwquiz.app'
         minSdkVersion 14
